@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
 project(pytorch3d_operators LANGUAGES CXX CUDA)
 
+include(${CMAKE_BINARY_DIR}/conan_paths.cmake)
+
 find_package(Torch REQUIRED)
 find_package(CUDA REQUIRED)
 
