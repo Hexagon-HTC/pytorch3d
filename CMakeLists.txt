@@ -30,7 +30,7 @@ if(MSVC)
     set(CMAKE_CUDA_FLAGS "-Xcompiler=\"/EHsc /wd4267 /wd4251 /wd4522 /wd4838 /wd4305 /wd4244 /wd4190 /wd4101 /wd4996 /wd4275 /bigobj\"")
 endif()
 
-# Enable C++14
+# Enable C++17
 target_compile_features(pytorch3d_operators PRIVATE cxx_range_for)
 target_compile_features(pytorch3d_operators PUBLIC cxx_std_17)
 
