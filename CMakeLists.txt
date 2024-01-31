@@ -32,7 +32,7 @@ endif()
 
 # Enable C++14
 target_compile_features(pytorch3d_operators PRIVATE cxx_range_for)
-target_compile_features(pytorch3d_operators PUBLIC cxx_std_14)
+target_compile_features(pytorch3d_operators PUBLIC cxx_std_17)
 
 # Link against LibTorch
 target_link_libraries(pytorch3d_operators torch cuda)
